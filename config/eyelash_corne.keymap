@@ -123,7 +123,7 @@
 &trans  &trans  &trans  &trans  &trans            &trans                               &trans          &res_info  &claim_hc  &claim_sc  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans                       &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans          &trans     &trans     &trans     &trans  &trans  &trans
-                        &mo 3   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                    &trans     &trans     &mo 3
+                        &mo 3   &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &trans     &trans     &mo 3
             >;
 
             label = "MACROS";
