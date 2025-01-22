@@ -141,8 +141,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SETTINGS, type: held}
-  - Sft+Gui+$$mdi:arrow-left-bold$$
-  - Sft+Gui+$$mdi:arrow-right-bold$$
+  - Gui+Ctl+$$mdi:arrow-left-bold$$
+  - Gui+Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SETTINGS, type: held alternate}
