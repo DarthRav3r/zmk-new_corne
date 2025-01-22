@@ -61,6 +61,29 @@
         };
     };
 
+    macros {
+        res_info: res_info {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp TAB &kp NUMBER_2 &kp TAB &kp TAB &kp TAB &kp TAB &kp Y &kp TAB &kp Y &kp TAB &kp C &kp TAB &kp TAB &kp NUMBER_1 &kp NUMBER_3>;
+            label = "RES_INFO";
+        };
+
+        claim_hc: claim_hc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N9 &kp N9 &kp N5 &kp N0 &kp N9 &kp TAB &kp TAB &kp LS(S) &kp LS(C) &kp TAB &kp TAB &kp TAB &kp TAB &kp N1 &kp TAB &kp TAB &kp TAB &kp TAB>;
+            label = "CLAIM_HC";
+        };
+
+        claim_sc: claim_sc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N9 &kp N9 &kp N5 &kp N0 &kp N9 &kp TAB &kp TAB &kp LS(H) &kp LS(C) &kp TAB &kp TAB &kp TAB &kp TAB &kp N1 &kp TAB &kp TAB &kp TAB &kp TAB>;
+            label = "CLAIM_SC";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
