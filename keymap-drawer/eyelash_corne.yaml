@@ -78,8 +78,8 @@ layers:
   - +
   - $$mdi:volume-low$$
   - $$mdi:keyboard-tab-reverse$$
-  - RGB OFF
-  - RGB ON
+  - Ctl+Z
+  - '&equals_sum'
   - Ctl+A
   - PgDn
   - END
@@ -105,9 +105,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&res_info'
+  - '&claim_hc'
+  - '&claim_sc'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
