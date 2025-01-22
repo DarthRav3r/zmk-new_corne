@@ -82,6 +82,13 @@
             bindings = <&kp N9 &kp N9 &kp N5 &kp N0 &kp N9 &kp TAB &kp TAB &kp LS(H) &kp LS(C) &kp TAB &kp TAB &kp TAB &kp TAB &kp N1 &kp TAB &kp TAB &kp TAB &kp TAB>;
             label = "CLAIM_SC";
         };
+
+        equals_sum: equals_sum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp LS(S) &kp LS(U) &kp LS(M) &kp LPAR>;
+            label = "EQUALS_SUM";
+        };
     };
 
     keymap {
@@ -102,10 +109,10 @@
         Numbers {
             display-name = "NUMBER";
             bindings = <
-&kp ESCAPE        &kp LS(C)          &kp LS(V)       &kp UP_ARROW  &kp TAB        &kp HOME                               &mmv MOVE_UP                     &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp C_VOLUME_UP
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT        &kp DOWN      &kp RIGHT      &kp PAGE_UP            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp C_VOL_DN
-&kp LS(TAB)       &rgb_ug RGB_OFF    &rgb_ug RGB_ON  &kp LC(A)     &kp PAGE_DOWN  &kp END      &trans                    &mmv MOVE_DOWN                   &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp K_MUTE
-                                                     &trans        &trans         &trans                                                                  &trans           &kp N0        &kp PERIOD
+&kp ESCAPE        &kp LS(C)          &kp LS(V)    &kp UP_ARROW  &kp TAB        &kp HOME                               &mmv MOVE_UP                     &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp C_VOLUME_UP
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT     &kp DOWN      &kp RIGHT      &kp PAGE_UP            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp C_VOL_DN
+&kp LS(TAB)       &kp LC(Z)          &equals_sum  &kp LC(A)     &kp PAGE_DOWN  &kp END      &trans                    &mmv MOVE_DOWN                   &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp K_MUTE
+                                                  &trans        &trans         &trans                                                                  &trans           &kp N0        &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -113,10 +120,10 @@
 
         Macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans                               &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &mo 3   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                    &trans  &trans  &mo 3
+&trans  &trans  &trans  &trans  &trans            &trans                               &trans          &res_info  &claim_hc  &claim_sc  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans                       &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans          &trans     &trans     &trans     &trans  &trans  &trans
+                        &mo 3   &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))                                    &trans     &trans     &mo 3
             >;
 
             label = "MACROS";
