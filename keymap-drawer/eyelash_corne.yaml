@@ -42,12 +42,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, h: RIGHT GUI}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: QWERTY}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: MACROS}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
+  - {t: '$$mdi:keyboard-return$$', h: MACROS}
   NUMBER:
   - $$mdi:keyboard-esc$$
   - Sft+C
@@ -140,12 +140,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - SETTINGS
+  - {t: SETTINGS, type: held}
   - Sft+Gui+$$mdi:arrow-left-bold$$
   - Sft+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - SETTINGS
+  - {t: SETTINGS, type: held alternate}
   SETTINGS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
 combos:
 - p: [28, 0, 5, 33]
   k: $$mdi:progress-download$$
