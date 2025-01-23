@@ -50,8 +50,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: MACROS}
   NUMBER:
   - $$mdi:keyboard-esc$$
-  - Sft+C
-  - Sft+V
+  - Ctl+C
+  - Ctl+V
   - $$mdi:arrow-up-bold$$
   - $$mdi:keyboard-tab$$
   - HOME
@@ -120,6 +120,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&service_dates'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -133,8 +134,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tab_x_4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
