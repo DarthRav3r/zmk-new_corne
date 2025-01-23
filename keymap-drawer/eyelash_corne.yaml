@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SETTINGS, type: held alternate}
   SETTINGS:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - A
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
