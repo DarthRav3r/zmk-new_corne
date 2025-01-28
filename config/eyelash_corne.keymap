@@ -103,6 +103,34 @@
             bindings = <&kp TAB &kp TAB &kp TAB &kp TAB>;
             label = "TAB_X_4";
         };
+
+        email_personal: email_personal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp N1 &kp N3 &kp N8 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL_PERSONAL";
+        };
+
+        email_work: email_work {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp AT &kp A &kp L &kp G &kp S &kp E &kp N &kp I &kp O &kp R &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL_WORK";
+        };
+
+        email_logins: email_logins {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp AT &kp C &kp H &kp A &kp N &kp C &kp E &kp L &kp L &kp O &kp R &kp H &kp C &kp S &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL_LOGINS";
+        };
+
+        address: address {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N1 &kp N4 &kp N4 &kp N5 &kp SPACE &kp N3 &kp N2 &kp N &kp D &kp SPACE &kp LS(S) &kp T &kp R &kp E &kp E &kp T &kp SPACE &kp LS(C) &kp T &kp DOT &kp SPACE &kp LS(N) &kp LS(E) &kp RET &kp LS(C) &kp O &kp N &kp O &kp V &kp E &kp R &kp COMMA &kp SPACE &kp LS(N) &kp LS(C) &kp SPACE &kp N2 &kp N8 &kp N6 &kp N1 &kp N3>;
+            label = "ADDRESS";
+        };
     };
 
     keymap {
@@ -134,10 +162,10 @@
 
         Macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans                               &trans          &res_info       &claim_hc  &claim_sc  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                       &trans  &trans  &trans  &service_dates  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans          &tab_x_4        &trans     &trans     &trans  &trans  &trans
-                        &to 3   &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &trans          &trans     &to 3
+&trans  &trans  &trans    &trans         &trans            &trans                               &trans          &res_info       &claim_hc  &claim_sc  &trans  &trans  &trans
+&trans  &trans  &address  &email_logins  &email_work       &email_personal              &trans  &trans  &trans  &service_dates  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans    &trans         &trans            &trans             &trans            &trans          &tab_x_4        &trans     &trans     &trans  &trans  &trans
+                          &to 3          &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &trans          &trans     &to 3
             >;
 
             label = "MACROS";
