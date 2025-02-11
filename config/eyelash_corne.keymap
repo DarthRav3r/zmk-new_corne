@@ -185,7 +185,7 @@
             bindings = <
 &trans  &trans     &trans    &trans         &trans            &trans                               &trans          &res_info       &claim_hc         &claim_sc         &trans  &trans  &trans
 &trans  &address2  &address  &email_logins  &email_work       &email_personal              &trans  &trans  &trans  &service_dates  &service_dates_2  &service_dates_3  &trans  &trans  &trans
-&trans  &trans     &trans    &trans         &trans            &trans             &trans            &trans          &tab_x_4        &trans            &trans            &trans  &trans  &trans
+&trans  &trans     &trans    &trans         &trans            &trans             &trans            &trans          &tab_x_4        &tab_x_4          &trans            &trans  &trans  &trans
                              &to 3          &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans            &to 3
             >;
 
