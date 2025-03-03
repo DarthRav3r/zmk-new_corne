@@ -109,23 +109,23 @@ layers:
   - '&claim_hc'
   - '&claim_sc'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&Daily_520_30'
+  - '&Daily_520_31'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&address2'
-  - '&address'
-  - '&email_logins'
-  - '&email_work'
-  - '&email_personal'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&service_dates'
-  - '&service_dates'
-  - '&service_dates_3'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&service_dates_split2'
+  - '&Daily_400_30'
+  - '&Daily_400_31'
+  - '&Daily_480_30'
+  - '&Daily_480_31'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -136,10 +136,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&tab_x_4'
   - '&tab_x_4'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Daily_320_30'
+  - '&Daily_320_31'
+  - '&Daily_440_30'
+  - '&Daily_440_31'
   - {t: SETTINGS, h: toggle, type: held}
   - Gui+Ctl+$$mdi:arrow-left-bold$$
   - Gui+Ctl+$$mdi:arrow-right-bold$$
