@@ -104,39 +104,81 @@
             label = "TAB_X_4";
         };
 
-        email_personal: email_personal {
+        Daily_520_30: Daily_520_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp N1 &kp N3 &kp N8 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL_PERSONAL";
+            bindings = <&none &kp N1 &kp N0 &kp N3 &kp DOT &kp N3 &kp N1>;
+            label = "DAILY_520_30";
         };
 
-        email_work: email_work {
+        Daily_520_31: Daily_520_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp AT &kp A &kp L &kp G &kp S &kp E &kp N &kp I &kp O &kp R &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL_WORK";
+            bindings = <&none &kp N9 &kp N9 &kp DOT &kp N9 &kp N7>;
+            label = "DAILY_520_31";
         };
 
-        email_logins: email_logins {
+        Daily_480_30: Daily_480_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp T &kp H &kp E &kp G &kp E &kp R &kp T &kp AT &kp C &kp H &kp A &kp N &kp C &kp E &kp L &kp L &kp O &kp R &kp H &kp C &kp S &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL_LOGINS";
+            bindings = <&none &kp N9 &kp N5 &kp DOT &kp N3 &kp N6>;
+            label = "DAILY_480_30";
         };
 
-        address: address {
+        Daily_480_31: Daily_480_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N1 &kp N4 &kp N4 &kp N5 &kp SPACE &kp N3 &kp N2 &kp N &kp D &kp SPACE &kp LS(S) &kp T &kp R &kp E &kp E &kp T &kp SPACE &kp LS(C) &kp T &kp DOT &kp SPACE &kp LS(N) &kp LS(E)>;
-            label = "ADDRESS";
+            bindings = <&none &kp N9 &kp N2 &kp DOT &kp N2 &kp N8>;
+            label = "DAILY_480_31";
         };
 
-        address2: address2 {
+        Daily_440_30: Daily_440_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(C) &kp O &kp N &kp O &kp V &kp E &kp R &kp COMMA &kp SPACE &kp LS(N) &kp LS(C) &kp SPACE &kp N2 &kp N8 &kp N6 &kp N1 &kp N3>;
-            label = "ADDRESS2";
+            bindings = <&none &kp N8 &kp N7 &kp DOT &kp N4 &kp N1>;
+            label = "DAILY_440_30";
+        };
+
+        Daily_440_31: Daily_440_31 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N8 &kp N4 &kp DOT &kp N5 &kp N9>;
+            label = "DAILY_440_31";
+        };
+
+        Daily_400_30: Daily_400_30 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N7 &kp N9 &kp DOT &kp N4 &kp N7>;
+            label = "DAILY_400_30";
+        };
+
+        Daily_400_31: Daily_400_31 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N7 &kp N6 &kp DOT &kp N9 &kp N0>;
+            label = "DAILY_400_31";
+        };
+
+        Daily_320_30: Daily_320_30 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N6 &kp N3 &kp DOT &kp N5 &kp N7>;
+            label = "DAILY_320_30";
+        };
+
+        service_dates_split2: service_dates_split2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N2 &kp N1 &kp N0 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N2 &kp N1 &kp N6 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            label = "SERVICE_DATES_SPLIT2";
+        };
+
+        Daily_320_31: Daily_320_31 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N6 &kp NUMBER_1 &kp DOT &kp N5 &kp NUMBER_2>;
+            label = "DAILY_320_31";
         };
     };
 
@@ -169,10 +211,10 @@
 
         Macros {
             bindings = <
-&trans  &trans     &trans    &trans         &trans            &trans                               &trans          &res_info       &claim_hc       &claim_sc         &trans  &trans  &trans
-&trans  &address2  &address  &email_logins  &email_work       &email_personal              &trans  &trans  &trans  &service_dates  &service_dates  &service_dates_3  &trans  &trans  &trans
-&trans  &trans     &trans    &trans         &trans            &trans             &trans            &trans          &tab_x_4        &tab_x_4        &trans            &trans  &trans  &trans
-                             &to 3          &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans          &to 3
+&trans  &trans  &trans  &trans  &trans            &trans                               &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
+&trans  &trans  &trans  &trans  &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
+&trans  &trans  &trans  &trans  &trans            &trans             &trans            &trans          &tab_x_4        &tab_x_4               &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
+                        &to 3   &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
             >;
 
             label = "MACROS";
