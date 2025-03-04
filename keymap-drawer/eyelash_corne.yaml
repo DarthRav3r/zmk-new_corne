@@ -101,9 +101,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Replaced'
+  - '&Rebilled'
+  - '&Paid'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&res_info'
   - '&claim_hc'
