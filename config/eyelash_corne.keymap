@@ -57,6 +57,11 @@
             bindings = <&bootloader>;
             key-positions = <7 36 12 41>;
         };
+
+        COlor_Picker {
+            bindings = <&Color_Picker>;
+            key-positions = <28 29 30>;
+        };
     };
 
     macros {
@@ -198,6 +203,13 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(R) &kp E &kp P &kp L &kp A &kp C &kp E &kp D &kp FSLH &kp LS(P) &kp A &kp I &kp D &kp SPACE>;
             label = "REPLACED";
+        };
+
+        Color_Picker: Color_Picker {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp LA(H)>;
+            label = "COLOR_PICKER";
         };
     };
 
