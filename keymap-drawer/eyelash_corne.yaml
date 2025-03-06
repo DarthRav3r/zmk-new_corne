@@ -200,3 +200,5 @@ combos:
   k: $$mdi:progress-download$$
 - p: [7, 36, 12, 41]
   k: $$mdi:progress-download$$
+- p: [28, 29, 30]
+  k: '&Color_Picker'
