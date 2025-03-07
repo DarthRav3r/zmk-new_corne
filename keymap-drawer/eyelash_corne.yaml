@@ -100,7 +100,7 @@ layers:
   MACROS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Today_Date'
   - '&Replaced'
   - '&Rebilled'
   - '&Paid'
