@@ -96,7 +96,7 @@
         service_dates: service_dates {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N2 &kp FSLH &kp N0 &kp N1 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N2 &kp FSLH &kp N2 &kp N8 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            bindings = <&kp N0 &kp N3 &kp N0 &kp N3 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N3 &kp N0 &kp N9 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
             label = "SERVICE_DATES";
         };
 
@@ -212,11 +212,11 @@
             label = "COLOR_PICKER";
         };
 
-        Today_Date: Today_Date {
+        Today: Today {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N0 &kp N7 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
-            label = "TODAY_DATE";
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp N0 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            label = "TODAY";
         };
     };
 
@@ -249,10 +249,10 @@
 
         Macros {
             bindings = <
-&trans  &trans  &Today_Date  &Replaced  &Rebilled         &Paid                                &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
-&trans  &trans  &trans       &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
-&trans  &trans  &trans       &trans     &trans            &trans             &trans            &trans          &tab_x_4        &tab_x_4               &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
-                             &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
+&trans  &trans  &Today  &Replaced  &Rebilled         &Paid                                &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
+&trans  &trans  &trans  &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
+&trans  &trans  &trans  &trans     &trans            &trans             &trans            &trans          &tab_x_4        &tab_x_4               &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
+                        &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
             >;
 
             label = "MACROS";
