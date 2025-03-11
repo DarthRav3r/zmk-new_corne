@@ -98,9 +98,9 @@ layers:
   - {t: '0', s: ), type: held alternate}
   - .
   MACROS:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&Today'
+  - '&Wednesday'
+  - '&Tuesday'
+  - '&Monday'
   - '&Replaced'
   - '&Rebilled'
   - '&Paid'
@@ -112,8 +112,8 @@ layers:
   - '&Daily_520_30'
   - '&Daily_520_31'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Friday'
+  - '&Thursday'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
