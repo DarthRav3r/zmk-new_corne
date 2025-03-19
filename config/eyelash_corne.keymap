@@ -96,7 +96,7 @@
         service_dates: service_dates {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N3 &kp N0 &kp NUMBER_1 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp NUMBER_4 &kp NUMBER_3 &kp N0 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            bindings = <&kp N0 &kp N3 &kp NUMBER_1 &kp N0 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_6 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
             label = "SERVICE_DATES";
         };
 
@@ -215,35 +215,35 @@
         Monday: Today {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp N0 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp N7 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "TODAY";
         };
 
         Tuesday: Tuesday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp NUMBER_1 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp N8 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "TUESDAY";
         };
 
         Wednesday: Wednesday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp NUMBER_2 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp N9 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "WEDNESDAY";
         };
 
         Thursday: Thursday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp NUMBER_3 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp NUMBER_2 &kp N0 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "THURSDAY";
         };
 
         Friday: Friday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N1 &kp NUMBER_3 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp NUMBER_2 &kp NUMBER_1 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "FRIDAY";
         };
 
