@@ -253,6 +253,34 @@
             bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB>;
             label = "TABX5";
         };
+
+        HealthyBlue: HealthyBlue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(H) &kp E &kp A &kp L &kp T &kp H &kp Y &kp LS(B) &kp L &kp U &kp E &kp MINUS>;
+            label = "HEALTHYBLUE";
+        };
+
+        Partners: Partners {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(P) &kp A &kp R &kp T &kp N &kp E &kp R &kp S &kp MINUS>;
+            label = "PARTNERS";
+        };
+
+        AmeriHealth: AmeriHealth {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp M &kp E &kp R &kp I &kp LS(H) &kp E &kp A &kp L &kp T &kp H &kp MINUS>;
+            label = "AMERIHEALTH";
+        };
+
+        Trillium: Trillium {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp R &kp I &kp L &kp L &kp I &kp U &kp M &kp MINUS>;
+            label = "TRILLIUM";
+        };
     };
 
     keymap {
@@ -284,10 +312,10 @@
 
         Macros {
             bindings = <
-&Wednesday  &Tuesday  &Monday    &Replaced  &Rebilled         &Paid                                &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
-&trans      &Friday   &Thursday  &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
-&trans      &trans    &trans     &trans     &trans            &trans             &trans            &trans          &tab_x_4        &tabx5                 &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
-                                 &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
+&Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
+&trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
+&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &tab_x_4        &tabx5                 &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
+                                       &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
             >;
 
             label = "MACROS";
