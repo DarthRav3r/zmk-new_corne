@@ -127,10 +127,10 @@ layers:
   - '&Daily_400_31'
   - '&Daily_480_30'
   - '&Daily_480_31'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&HealthyBlue'
+  - '&Partners'
+  - '&AmeriHealth'
+  - '&Trillium'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
