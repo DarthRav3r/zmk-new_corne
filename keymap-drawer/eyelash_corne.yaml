@@ -124,7 +124,7 @@ layers:
   - '&service_dates_1'
   - '&service_dates_2'
   - '&service_dates_3'
-  - '&Daily_400_31'
+  - '&service_dates_4'
   - '&Daily_480_30'
   - '&Daily_480_31'
   - '&HealthyBlue'
