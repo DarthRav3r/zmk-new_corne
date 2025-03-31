@@ -93,13 +93,6 @@
             label = "EQUALS_SUM";
         };
 
-        service_dates: service_dates {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0 &kp N3 &kp NUMBER_1 &kp N0 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_6 &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
-            label = "SERVICE_DATES";
-        };
-
         tab_x_4: tab_x_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -168,13 +161,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp N6 &kp N3 &kp DOT &kp N5 &kp N7>;
             label = "DAILY_320_30";
-        };
-
-        service_dates_split2: service_dates_split2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0 &kp N1 &kp FSLH &kp N3 &kp N1 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N2 &kp FSLH &kp N2 &kp N8 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
-            label = "SERVICE_DATES_SPLIT2";
         };
 
         Daily_320_31: Daily_320_31 {
@@ -281,6 +267,27 @@
             bindings = <&none &kp LS(T) &kp R &kp I &kp L &kp L &kp I &kp U &kp M &kp MINUS>;
             label = "TRILLIUM";
         };
+
+        service_dates_1: service_dates_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp N0 &kp N3 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N3 &kp FSLH &kp N0 &kp N6 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            label = "SERVICE_DATES_1";
+        };
+
+        service_dates_2: service_dates_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp NUMBER_1 &kp N0 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N3 &kp FSLH &kp N1 &kp N6 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            label = "SERVICE_DATES_2";
+        };
+
+        service_dates_3: service_dates_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N0 &kp N3 &kp FSLH &kp NUMBER_1 &kp N7 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N3 &kp FSLH &kp NUMBER_2 &kp NUMBER_3 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            label = "SERVICE_DATES_3";
+        };
     };
 
     keymap {
@@ -312,10 +319,10 @@
 
         Macros {
             bindings = <
-&Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info       &claim_hc              &claim_sc      &trans         &Daily_520_30  &Daily_520_31
-&trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates  &service_dates_split2  &Daily_400_30  &Daily_400_31  &Daily_480_30  &Daily_480_31
-&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &tab_x_4        &tabx5                 &Daily_320_30  &Daily_320_31  &Daily_440_30  &Daily_440_31
-                                       &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)     &trans                 &to 3
+&Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info         &claim_hc         &claim_sc         &trans         &Daily_520_30  &Daily_520_31
+&trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates_1  &service_dates_2  &service_dates_3  &Daily_400_31  &Daily_480_30  &Daily_480_31
+&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &tab_x_4          &tabx5            &Daily_320_30     &Daily_320_31  &Daily_440_30  &Daily_440_31
+                                       &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)       &trans            &to 3
             >;
 
             label = "MACROS";
