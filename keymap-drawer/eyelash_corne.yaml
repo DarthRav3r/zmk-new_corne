@@ -121,9 +121,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&service_dates'
-  - '&service_dates_split2'
-  - '&Daily_400_30'
+  - '&service_dates_1'
+  - '&service_dates_2'
+  - '&service_dates_3'
   - '&Daily_400_31'
   - '&Daily_480_30'
   - '&Daily_480_31'
