@@ -110,7 +110,7 @@
         Daily_520_31: Daily_520_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N9 &kp N9 &kp DOT &kp N9 &kp N7>;
+            bindings = <&none &kp N9 &kp N9 &kp DOT &kp N9 &kp N8>;
             label = "DAILY_520_31";
         };
 
@@ -124,21 +124,21 @@
         Daily_480_31: Daily_480_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N9 &kp N2 &kp DOT &kp N2 &kp N8>;
+            bindings = <&none &kp N9 &kp N2 &kp DOT &kp N2 &kp N9>;
             label = "DAILY_480_31";
         };
 
         Daily_440_30: Daily_440_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N8 &kp N7 &kp DOT &kp N4 &kp N1>;
+            bindings = <&none &kp N8 &kp N7 &kp DOT &kp N4 &kp NUMBER_2>;
             label = "DAILY_440_30";
         };
 
         Daily_440_31: Daily_440_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N8 &kp N4 &kp DOT &kp N5 &kp N9>;
+            bindings = <&none &kp N8 &kp N4 &kp DOT &kp NUMBER_6 &kp N0>;
             label = "DAILY_440_31";
         };
 
@@ -152,21 +152,21 @@
         Daily_400_31: Daily_400_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N7 &kp N6 &kp DOT &kp N9 &kp N0>;
+            bindings = <&none &kp N7 &kp N6 &kp DOT &kp N9 &kp NUMBER_1>;
             label = "DAILY_400_31";
         };
 
         Daily_320_30: Daily_320_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N6 &kp N3 &kp DOT &kp N5 &kp N7>;
+            bindings = <&none &kp N6 &kp N3 &kp DOT &kp N5 &kp N8>;
             label = "DAILY_320_30";
         };
 
         Daily_320_31: Daily_320_31 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N6 &kp NUMBER_1 &kp DOT &kp N5 &kp NUMBER_2>;
+            bindings = <&none &kp N6 &kp NUMBER_1 &kp DOT &kp N5 &kp NUMBER_3>;
             label = "DAILY_320_31";
         };
 
@@ -295,6 +295,13 @@
             bindings = <&none &kp N0 &kp N3 &kp FSLH &kp NUMBER_2 &kp NUMBER_4 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB &kp N0 &kp N3 &kp FSLH &kp NUMBER_3 &kp N0 &kp FSLH &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
             label = "SERVICE_DATES_4";
         };
+
+        tab_u: tab_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp NUMBER_1 &kp TAB &kp U &kp TAB>;
+            label = "TAB_U";
+        };
     };
 
     keymap {
@@ -326,10 +333,10 @@
 
         Macros {
             bindings = <
-&Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info         &claim_hc         &claim_sc         &trans            &Daily_520_30  &Daily_520_31
-&trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &service_dates_1  &service_dates_2  &service_dates_3  &service_dates_4  &Daily_480_30  &Daily_480_31
-&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &tab_x_4          &tabx5            &Daily_320_30     &Daily_320_31     &Daily_440_30  &Daily_440_31
-                                       &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)       &trans            &to 3
+&Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info    &Daily_320_31  &Daily_400_31     &Daily_440_31     &Daily_480_31     &Daily_520_31
+&trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &claim_hc    &Daily_320_30  &Daily_400_30     &Daily_440_30     &Daily_480_30     &Daily_520_30
+&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &claim_sc    &tab_u         &service_dates_1  &service_dates_2  &service_dates_3  &service_dates_4
+                                       &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)  &trans         &to 3
             >;
 
             label = "MACROS";
