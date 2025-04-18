@@ -107,10 +107,10 @@ layers:
   - '&Paid'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&res_info'
-  - '&claim_hc'
-  - '&claim_sc'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&Daily_520_30'
+  - '&Daily_320_31'
+  - '&Daily_400_31'
+  - '&Daily_440_31'
+  - '&Daily_480_31'
   - '&Daily_520_31'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&Friday'
@@ -121,12 +121,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&service_dates_1'
-  - '&service_dates_2'
-  - '&service_dates_3'
-  - '&service_dates_4'
+  - '&claim_hc'
+  - '&Daily_320_30'
+  - '&Daily_400_30'
+  - '&Daily_440_30'
   - '&Daily_480_30'
-  - '&Daily_480_31'
+  - '&Daily_520_30'
   - '&HealthyBlue'
   - '&Partners'
   - '&AmeriHealth'
@@ -135,12 +135,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&tab_x_4'
-  - '&tabx5'
-  - '&Daily_320_30'
-  - '&Daily_320_31'
-  - '&Daily_440_30'
-  - '&Daily_440_31'
+  - '&claim_sc'
+  - '&tab_u'
+  - '&service_dates_1'
+  - '&service_dates_2'
+  - '&service_dates_3'
+  - '&service_dates_4'
   - {t: SETTINGS, h: toggle, type: held}
   - Gui+Ctl+$$mdi:arrow-left-bold$$
   - Gui+Ctl+$$mdi:arrow-right-bold$$
