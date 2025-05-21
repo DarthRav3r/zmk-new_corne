@@ -302,6 +302,13 @@
             bindings = <&kp TAB &kp NUMBER_1 &kp TAB &kp U &kp TAB>;
             label = "TAB_U";
         };
+
+        m_2025: m_2025 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N2 &kp N0 &kp N2 &kp N5 &kp TAB>;
+            label = "M_2025";
+        };
     };
 
     keymap {
@@ -324,7 +331,7 @@
             bindings = <
 &kp ESCAPE        &kp LC(C)          &kp LC(V)    &kp UP_ARROW  &kp TAB        &kp HOME                               &mmv MOVE_UP                     &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp C_VOLUME_UP
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT     &kp DOWN      &kp RIGHT      &kp PAGE_UP            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp C_VOL_DN
-&kp LS(TAB)       &kp LC(Z)          &equals_sum  &kp LC(A)     &kp PAGE_DOWN  &kp END      &trans                    &mmv MOVE_DOWN                   &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp K_MUTE
+&kp LS(TAB)       &kp LC(Z)          &equals_sum  &kp LC(A)     &kp PAGE_DOWN  &kp END      &trans                    &mmv MOVE_DOWN                   &kp EQUAL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &m_2025    &kp K_MUTE
                                                   &trans        &trans         &trans                                                                  &trans           &kp N0        &kp PERIOD
             >;
 
