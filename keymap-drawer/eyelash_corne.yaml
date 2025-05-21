@@ -90,7 +90,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&m_2025'
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
