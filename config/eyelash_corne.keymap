@@ -316,6 +316,13 @@
             bindings = <&none &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB>;
             label = "TAB_X_8";
         };
+
+        Wellcare: Wellcare {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(W) &kp E &kp L &kp L &kp C &kp A &kp R &kp E &kp MINUS>;
+            label = "WELLCARE";
+        };
     };
 
     keymap {
@@ -349,7 +356,7 @@
             bindings = <
 &Wednesday    &Tuesday   &Monday       &Replaced  &Rebilled         &Paid                                &trans          &res_info    &Daily_320_31  &Daily_400_31     &Daily_440_31     &Daily_480_31     &Daily_520_31
 &trans        &Friday    &Thursday     &trans     &trans            &trans                       &trans  &trans  &trans  &claim_hc    &Daily_320_30  &Daily_400_30     &Daily_440_30     &Daily_480_30     &Daily_520_30
-&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &trans            &trans             &trans            &trans          &claim_sc    &tab_u         &service_dates_1  &service_dates_2  &service_dates_3  &service_dates_4
+&HealthyBlue  &Partners  &AmeriHealth  &Trillium  &Wellcare         &trans             &trans            &trans          &claim_sc    &tab_u         &service_dates_1  &service_dates_2  &service_dates_3  &service_dates_4
                                        &to 3      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                    &kp LG(TAB)  &trans         &to 3
             >;
 
